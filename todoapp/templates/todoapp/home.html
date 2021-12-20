@@ -1,0 +1,11 @@
+<h1>welcome to my todo app</h1>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.title }}
+  <input type="submit">
+</form>
+
+{% for todo in todos %}
+<div>{{ todo }}</div>
+{% endfor %}
